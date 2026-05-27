@@ -22,54 +22,69 @@ export const stats = [
   { value: 'Potsdam', label: 'fest verwurzelt', detail: 'Standort seit Gründung' },
 ] as const
 
-export const audiences = [
+export const promises = [
   {
-    tag: 'Für Architekten',
-    pain: 'TGA-Pläne kommen zu spät und kollidieren mit der Statik.',
-    promise: 'Mitdenkender Fachplaner mit sauberen Schnittstellen von LP 1 bis zur Übergabe.',
+    number: '01',
+    headline: 'Termine, die halten.',
+    body: 'Wir kommen nicht zu spät in Ihr Projekt, und wir bleiben nicht hinter der Baustelle zurück. Wer mit uns plant, weiß, wann was fertig ist.',
+    proof: 'Über 500 Projekte ohne Bauverzug durch unsere Planung.',
   },
   {
-    tag: 'Für öffentliche Auftraggeber',
-    pain: 'VgV-Verfahren ohne audit-festen Planungspartner werden zur Akte.',
-    promise: 'Erfahrung mit öffentlicher Vergabe in Brandenburg seit über drei Jahrzehnten.',
+    number: '02',
+    headline: 'Pläne, die zusammenpassen.',
+    body: 'Unsere Elektroplanung kollidiert nicht mit Statik, Lüftung oder Architektur. Wir arbeiten ab LP 1 mit den anderen Gewerken, nicht gegen sie.',
+    proof: 'BIM-fähig. Saubere Schnittstellen für jeden Generalplaner.',
   },
   {
-    tag: 'Für Bauherren & Investoren',
-    pain: 'Elektrokosten und Betriebskosten überraschen erst nach der Übergabe.',
-    promise: 'Wirtschaftliche Planung mit Blick auf Lebenszyklus und Wartungsaufwand.',
+    number: '03',
+    headline: 'Kosten, die nicht überraschen.',
+    body: 'Wir geben Kostenrahmen ab, die in der Ausschreibung stehen bleiben. Wir denken Betriebs- und Wartungskosten mit, nicht erst nach der Abnahme.',
+    proof: 'Herstellerunabhängig. Empfehlung nach Lebenszyklus, nicht nach Provision.',
   },
 ] as const
 
 export const services = [
   {
     title: 'Starkstromtechnik',
+    short: 'Energie ins Gebäude.',
     description:
       'Hoch-, Mittel- und Niederspannung. Netzberechnung, Verteilungen, Notstrom bis zur Übergabe an den Netzbetreiber.',
+    illustration: 'beam',
   },
   {
     title: 'Beleuchtungstechnik',
+    short: 'Licht, das wirtschaftlich bleibt.',
     description:
       'Herstellerunabhängige Lichtplanung für Innen- und Außenbereiche, normgerecht und mit Blick auf Stromverbrauch und Wartung.',
+    illustration: 'pulse',
   },
   {
     title: 'Brandmelde- und Sicherheit',
+    short: 'Schutz nach Vorschrift.',
     description:
       'BMA, EMA, Videosicherheit, Zutrittskontrolle. Geplant nach DIN 14675 und den Anforderungen der Bauordnung Brandenburg.',
+    illustration: 'pulse',
   },
   {
     title: 'Daten- und Kommunikationstechnik',
+    short: 'Vom Patchpanel zum Rechenzentrum.',
     description:
       'Strukturierte Verkabelung, Netzwerk, IT-Schränke. Vom Patchpanel bis zum Rechenzentrum.',
+    illustration: 'nodes',
   },
   {
     title: 'Gebäudeautomation',
+    short: 'Schnittstellenoffen geplant.',
     description:
       'MSR- und Bustechnik für Heizung, Lüftung, Beschattung. Schnittstellenoffen, herstellerneutral.',
+    illustration: 'circuit',
   },
   {
     title: 'Beratung und Gutachten',
+    short: 'Eine zweite Meinung.',
     description:
       'Bestandsaufnahmen und Sanierungskonzepte. Auch als zweite Meinung zu laufenden Planungen anderer Büros.',
+    illustration: 'grid',
   },
 ] as const
 
