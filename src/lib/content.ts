@@ -34,6 +34,56 @@ export const stats = [
   { value: 'Potsdam', label: 'fest verwurzelt', detail: 'Standort seit Gründung' },
 ] as const
 
+export const careerJobs = [
+  {
+    role: 'Fachplaner / Projektingenieur (m/w/d)',
+    icon: 'engineer',
+    description:
+      'Eigene Projektverantwortung von der Grundlagenermittlung bis zur Übergabe. Sie führen die Schnittstellen zu Architekt, Bauherr und ausführenden Firmen.',
+    fields: [
+      'Starkstromanlagen',
+      'Informations- und sicherheitstechnische Anlagen',
+      'Gebäudeautomation und MSR',
+    ],
+    requirements: [
+      'Studium Elektrotechnik, Energietechnik, Gebäudetechnik oder vergleichbar',
+      'Erste Erfahrung in der Fachplanung von Vorteil, kein Muss',
+      'Sicheres Auftreten gegenüber Bauherren und Architekten',
+    ],
+  },
+  {
+    role: 'Technischer Systemplaner / CAD-Konstrukteur (m/w/d)',
+    icon: 'cad',
+    description:
+      'Sie zeichnen Strom- und Übersichtspläne, Kabellisten, Verteiler. Sie arbeiten eng mit dem Projektingenieur, der den fachlichen Rahmen vorgibt.',
+    fields: ['AutoCAD', 'optional Revit / BIM'],
+    requirements: [
+      'Abschluss als Technischer Systemplaner oder Elektroniker mit Planungserfahrung',
+      'Sicheres Arbeiten mit AutoCAD',
+      'Saubere, dokumentationsfähige Arbeitsweise',
+    ],
+  },
+] as const
+
+export const careerBenefits = [
+  {
+    title: 'Faires Festgehalt',
+    body: 'Unbefristeter Vertrag, marktgerechte Vergütung mit klarer Entwicklungsperspektive.',
+  },
+  {
+    title: 'Eigene Verantwortung',
+    body: 'Sie führen Ihr Projekt. Keine Konzernstrukturen, kurze Wege zur Geschäftsführung.',
+  },
+  {
+    title: 'Weiterbildung',
+    body: 'Fachseminare, Normenupdates, VdS- und Brandschutz-Schulungen werden bezahlt.',
+  },
+  {
+    title: 'Standort Potsdam',
+    body: 'Direkt am Tiefen See, ÖPNV-Anbindung, kein Berliner Pendel-Stress.',
+  },
+] as const
+
 export const promises = [
   {
     number: '01',
