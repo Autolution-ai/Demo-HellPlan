@@ -8,11 +8,12 @@ export function Audiences() {
   return (
     <SectionShell
       id="loesen"
+      tone="dark"
       eyebrow="Was wir versprechen"
       title="Drei Sätze. Drei Versprechen."
       intro="Wir planen seit 1990 Elektrotechnik in Brandenburg. Auf das hier können Sie uns festnageln."
     >
-      <div className="space-y-px bg-[color:var(--color-line)] border border-[color:var(--color-line)] rounded-2xl overflow-hidden">
+      <div className="space-y-px bg-white/10 border border-white/10 rounded-2xl overflow-hidden">
         {promises.map((p, i) => (
           <motion.div
             key={p.number}
@@ -20,25 +21,23 @@ export function Audiences() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: '-80px' }}
             transition={{ duration: 0.6, delay: i * 0.1, ease: 'easeOut' }}
-            className="group relative bg-[color:var(--color-bg)] hover:bg-[color:var(--color-surface)] transition-colors"
+            className="group relative bg-[color:var(--color-ink)] hover:bg-white/[0.04] transition-colors"
           >
             <div className="grid md:grid-cols-[120px_1fr_280px] gap-6 md:gap-10 items-center p-8 md:p-12">
-              <div className="font-display text-6xl md:text-7xl font-bold text-[color:var(--color-mute)]/40 group-hover:text-[color:var(--color-accent)] transition-colors duration-500">
+              <div className="font-display text-6xl md:text-7xl font-bold text-white/15 group-hover:text-[color:var(--color-accent)] transition-colors duration-500">
                 {p.number}
               </div>
               <div>
-                <h3 className="font-display text-3xl md:text-4xl font-bold text-[color:var(--color-ink)] tracking-tight">
+                <h3 className="font-display text-3xl md:text-4xl font-bold text-white tracking-tight">
                   {p.headline}
                 </h3>
-                <p className="mt-4 text-[color:var(--color-ink-soft)] leading-relaxed max-w-xl">
-                  {p.body}
-                </p>
+                <p className="mt-4 text-white/70 leading-relaxed max-w-xl">{p.body}</p>
               </div>
-              <div className="md:border-l md:border-[color:var(--color-line)] md:pl-8">
-                <div className="text-xs font-semibold uppercase tracking-[0.16em] text-[color:var(--color-mute)] mb-2">
+              <div className="md:border-l md:border-white/10 md:pl-8">
+                <div className="text-xs font-semibold uppercase tracking-[0.16em] text-white/40 mb-2">
                   Beleg
                 </div>
-                <div className="font-display text-base font-semibold text-[color:var(--color-ink)] leading-snug">
+                <div className="font-display text-base font-semibold text-white leading-snug">
                   {p.proof}
                 </div>
               </div>

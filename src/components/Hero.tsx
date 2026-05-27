@@ -32,20 +32,32 @@ export function Hero() {
       })
       gsap.set(root.querySelectorAll('[data-draw-fade], [data-text]'), { opacity: 0 })
 
-      // One scrubbed timeline tied to scroll progress through the hero.
+      // Pin the hero while the user scrolls one viewport-height — during that
+      // pinned distance, the plan emerges and the hero text steps out of the
+      // way so the strokes never cross live content.
       const tl = gsap.timeline({
         scrollTrigger: {
           trigger: root,
           start: 'top top',
-          end: 'bottom top',
+          end: '+=130%',
           scrub: 0.8,
+          pin: true,
+          anticipatePin: 1,
+          invalidateOnRefresh: true,
         },
       })
+
+      // Hero text and CTAs fade out fully and lift away
+      tl.to(
+        '[data-hero-content]',
+        { opacity: 0, y: -40, ease: 'none', duration: 0.4 },
+        0
+      )
 
       // Layer A retires
       tl.to(
         '[data-layer="start"]',
-        { opacity: 0.18, scale: 1.04, ease: 'none' },
+        { opacity: 0.1, scale: 1.04, ease: 'none', duration: 1 },
         0
       )
 
@@ -56,22 +68,26 @@ export function Hero() {
           strokeDashoffset: 0,
           ease: 'none',
           stagger: { each: 0.004, from: 'start' },
+          duration: 0.85,
         },
         0
       )
       tl.to(
         '[data-draw-fade]',
-        { opacity: 1, ease: 'none', stagger: 0.01 },
-        0.15
+        { opacity: 1, ease: 'none', stagger: 0.01, duration: 0.4 },
+        0.4
       )
-      tl.to('[data-text]', { opacity: 1, ease: 'none' }, 0.55)
+      tl.to('[data-text]', { opacity: 1, ease: 'none', duration: 0.2 }, 0.7)
 
-      // Hero text and CTAs fade as the plan takes over
+      // The scroll-down indicator retires together with the hero content
       tl.to(
-        '[data-hero-content]',
-        { opacity: 0.35, y: -30, ease: 'none' },
-        0.2
+        '[data-scroll-indicator]',
+        { opacity: 0, ease: 'none', duration: 0.3 },
+        0
       )
+
+      // Final breath — hold the completed plan for the last bit of pinned scroll
+      tl.to({}, { duration: 0.1 }, 0.9)
     },
     { scope: sectionRef }
   )
@@ -185,10 +201,11 @@ export function Hero() {
         initial={{ opacity: 0, y: -10 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6, delay: 1.2 }}
+        data-scroll-indicator
         className="absolute bottom-6 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 text-[color:var(--color-ink-soft)] hover:text-[color:var(--color-ink)] transition-colors group z-10"
         aria-label="Weiter scrollen"
       >
-        <span className="text-[10px] font-semibold uppercase tracking-[0.2em]">Plan entsteht</span>
+        <span className="text-[10px] font-semibold uppercase tracking-[0.2em]">Plan entsteht — weiter scrollen</span>
         <motion.div
           animate={{ y: [0, 8, 0] }}
           transition={{ duration: 1.8, repeat: Infinity, ease: 'easeInOut' }}
