@@ -24,8 +24,8 @@ export function Career() {
               </h2>
               <p className="mt-5 text-lg text-[color:var(--color-ink)]/80 leading-relaxed max-w-xl">
                 Wir suchen Fachplaner, Techniker und Bauleiter mit Lust auf saubere
-                Elektroplanung — vom Konzept bis zur Abnahme. Kurze Wege, klare Projekte,
-                Standort Potsdam.
+                Elektroplanung vom Konzept bis zur Abnahme. Kurze Wege, eigene Verantwortung im
+                Projekt, Standort Potsdam.
               </p>
             </div>
             <a

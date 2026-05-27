@@ -10,7 +10,7 @@ export function Audiences() {
       id="loesen"
       eyebrow="Was wir lösen"
       title="Drei Zielgruppen. Drei klare Antworten."
-      intro="Jedes Projekt hat einen Auftraggeber mit einer eigenen Sorge. Wir kennen sie — und planen entsprechend."
+      intro="Jedes Projekt hat einen Auftraggeber mit einer eigenen Sorge. Wir kennen sie und planen entsprechend."
     >
       <div className="grid md:grid-cols-3 gap-6">
         {audiences.map((aud, i) => (

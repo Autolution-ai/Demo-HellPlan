@@ -38,7 +38,7 @@ export function Contact() {
           </h2>
           <p className="mt-6 text-lg text-white/70 leading-relaxed">
             Skizzieren Sie kurz, worum es geht. Wir melden uns innerhalb von zwei Werktagen mit
-            einer ersten Einschätzung — oder vereinbaren direkt einen Termin in Potsdam.
+            einer ersten Einschätzung. Oder Sie vereinbaren direkt einen Termin bei uns in Potsdam.
           </p>
         </motion.div>
 

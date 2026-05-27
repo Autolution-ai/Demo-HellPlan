@@ -18,9 +18,9 @@ const siteUrl = 'https://hellplan.de'
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
-  title: 'HELLPLAN | Ingenieurbüro für Elektro- und Gebäudetechnik | Potsdam',
+  title: 'HELLPLAN | Elektroplanung Potsdam · Brandenburg seit 1990',
   description:
-    'Elektroplanung für Brandenburg seit 1990. Über 500 realisierte Projekte für öffentliche Auftraggeber, Architekten und Bauherren. Standort Potsdam.',
+    'Ingenieurbüro für Elektro- und Gebäudetechnik in Potsdam. Über 500 Projekte für öffentliche Auftraggeber, Architekten und Bauherren in Brandenburg.',
   keywords: [
     'Ingenieurbüro Elektrotechnik Potsdam',
     'Fachplaner Elektrotechnik Brandenburg',

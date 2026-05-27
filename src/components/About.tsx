@@ -14,15 +14,14 @@ export function About() {
       <div className="grid lg:grid-cols-[1.2fr_1fr] gap-12 lg:gap-16 items-start">
         <div className="space-y-6 text-lg text-[color:var(--color-ink-soft)] leading-relaxed">
           <p>
-            HELLPLAN wurde 1990 in Potsdam gegründet — als Brandenburg sich neu sortierte. Aus
+            HELLPLAN wurde 1990 in Potsdam gegründet, als Brandenburg sich neu sortierte. Aus
             diesem Anspruch ist ein Ingenieurbüro geworden, das alle elektrotechnischen Gewerke
             unter einem Dach plant.
           </p>
           <p>
             Heute führen wir die Gesellschaft als GmbH unter Geschäftsführer Florian Wildgrube
-            fort. Was geblieben ist: die Adresse in der Seestraße, die Verantwortung in eigener
-            Hand und der Anspruch, jedes Projekt termintreu und kostensicher durch alle neun
-            Leistungsphasen zu führen.
+            fort. Die Adresse in der Seestraße ist geblieben. Auch der Anspruch, jedes Projekt
+            termintreu und kostensicher durch alle neun Leistungsphasen zu führen.
           </p>
           <p>
             Wir arbeiten herstellerunabhängig. Unsere Empfehlung kostet Sie nur das, was an

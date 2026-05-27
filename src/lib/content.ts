@@ -26,7 +26,7 @@ export const audiences = [
   {
     tag: 'Für Architekten',
     pain: 'TGA-Pläne kommen zu spät und kollidieren mit der Statik.',
-    promise: 'Mitdenkender Fachplaner mit sauberen Schnittstellen — von LP 1 bis Übergabe.',
+    promise: 'Mitdenkender Fachplaner mit sauberen Schnittstellen von LP 1 bis zur Übergabe.',
   },
   {
     tag: 'Für öffentliche Auftraggeber',
@@ -44,12 +44,12 @@ export const services = [
   {
     title: 'Starkstromtechnik',
     description:
-      'Hoch-, Mittel- und Niederspannung. Netzberechnung, Verteilungen, Notstrom — bis zur Übergabe an den Netzbetreiber.',
+      'Hoch-, Mittel- und Niederspannung. Netzberechnung, Verteilungen, Notstrom bis zur Übergabe an den Netzbetreiber.',
   },
   {
     title: 'Beleuchtungstechnik',
     description:
-      'Herstellerunabhängige Lichtplanung für Innen und Außen. Energieeffizient, normgerecht, gestalterisch durchdacht.',
+      'Herstellerunabhängige Lichtplanung für Innen- und Außenbereiche, normgerecht und mit Blick auf Stromverbrauch und Wartung.',
   },
   {
     title: 'Brandmelde- und Sicherheit',
@@ -69,7 +69,7 @@ export const services = [
   {
     title: 'Beratung und Gutachten',
     description:
-      'Bestandsaufnahmen, Sanierungskonzepte, Energieberatung. Auch als zweite Meinung zu laufenden Planungen.',
+      'Bestandsaufnahmen und Sanierungskonzepte. Auch als zweite Meinung zu laufenden Planungen anderer Büros.',
   },
 ] as const
 
@@ -81,8 +81,8 @@ export const hoaiPhases = [
   { lp: 'LP 5', title: 'Ausführung', desc: 'Detailplanung in der Tiefe, die das Gewerk braucht.' },
   { lp: 'LP 6', title: 'Ausschreibung', desc: 'Leistungsverzeichnisse, mit denen sich kalkulieren lässt.' },
   { lp: 'LP 7', title: 'Vergabe', desc: 'Angebote prüfen, Verhandlung begleiten, Vergabeempfehlung.' },
-  { lp: 'LP 8', title: 'Objektüberwachung', desc: 'Bauleitung vor Ort. Qualität, Termin, Kosten im Griff.' },
-  { lp: 'LP 9', title: 'Dokumentation', desc: 'Bestandspläne, Übergabe, Gewährleistung bis zum Ende.' },
+  { lp: 'LP 8', title: 'Objektüberwachung', desc: 'Bauleitung vor Ort. Termine, Kosten und Qualität bleiben im Griff.' },
+  { lp: 'LP 9', title: 'Dokumentation', desc: 'Bestandspläne und Übergabe. Wir bleiben Ansprechpartner in der Gewährleistung.' },
 ] as const
 
 export const referenceFilters = [
@@ -164,7 +164,7 @@ export const references: ReadonlyArray<{
 export const testimonials = [
   {
     quote:
-      'HELLPLAN hat unsere Schulsanierung im laufenden Betrieb begleitet — Termine eingehalten, Kosten eingehalten, Schüler nicht gestört.',
+      'HELLPLAN hat unsere Schulsanierung im laufenden Betrieb begleitet. Termine und Kosten gehalten, kein Schüler hat etwas davon gemerkt.',
     author: 'M. K.',
     role: 'Hochbauamt',
     company: 'Landkreis Brandenburg (Platzhalter)',
@@ -208,7 +208,7 @@ export const faqs = [
   },
   {
     q: 'Wie schnell bekomme ich nach einer Anfrage eine Rückmeldung?',
-    a: 'In der Regel innerhalb von zwei Werktagen. Wenn Sie eine Ausschreibung mit knapper Frist haben, melden Sie sich telefonisch — wir finden eine Lösung.',
+    a: 'In der Regel innerhalb von zwei Werktagen. Wenn Sie eine Ausschreibung mit knapper Frist haben, rufen Sie uns an. Wir finden eine Lösung.',
   },
 ] as const
 

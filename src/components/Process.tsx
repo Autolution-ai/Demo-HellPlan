@@ -70,8 +70,8 @@ export function Process() {
             Neun Leistungsphasen. Eine durchgehende Linie.
           </h2>
           <p className="mt-5 text-lg text-white/70 leading-relaxed">
-            HOAI strukturiert unser Vorgehen. Wir liefern in jeder Phase belastbare Ergebnisse —
-            keine Lücken zwischen Konzept und Übergabe.
+            HOAI strukturiert unser Vorgehen. Wir liefern in jeder Phase belastbare Ergebnisse.
+            Keine Lücken zwischen Konzept und Übergabe.
           </p>
         </div>
 
