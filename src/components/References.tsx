@@ -5,7 +5,7 @@ import { motion, AnimatePresence } from 'framer-motion'
 import { MapPin, Calendar, ArrowUpRight } from 'lucide-react'
 import { references, referenceFilters, type ReferenceFilter } from '@/lib/content'
 import { SectionShell } from './SectionShell'
-import { Illustration } from './Illustration'
+import { Picture } from './Picture'
 
 const variantByCategory: Record<string, 'circuit' | 'waves' | 'grid' | 'pulse' | 'nodes' | 'beam'> = {
   Öffentlich: 'grid',
@@ -67,9 +67,11 @@ export function References() {
               className="group relative rounded-2xl bg-[color:var(--color-surface)] border border-[color:var(--color-line)] overflow-hidden hover:border-[color:var(--color-ink)] hover:-translate-y-1 transition-all duration-300"
             >
               <div className="relative aspect-[4/3] overflow-hidden">
-                <Illustration
-                  variant={variantByCategory[ref.category]}
-                  tone={toneByCategory[ref.category]}
+                <Picture
+                  src={ref.imageSrc}
+                  alt={ref.alt}
+                  fallbackVariant={variantByCategory[ref.category]}
+                  fallbackTone={toneByCategory[ref.category]}
                   seed={i + 1}
                   className="h-full w-full transition-transform duration-700 group-hover:scale-105"
                   label="Foto folgt"

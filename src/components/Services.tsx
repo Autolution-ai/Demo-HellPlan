@@ -4,7 +4,7 @@ import { motion } from 'framer-motion'
 import { Zap, Lightbulb, ShieldAlert, Network, Cog, FileSearch, ArrowUpRight } from 'lucide-react'
 import { services } from '@/lib/content'
 import { SectionShell } from './SectionShell'
-import { Illustration } from './Illustration'
+import { Picture } from './Picture'
 
 const icons = [Zap, Lightbulb, ShieldAlert, Network, Cog, FileSearch]
 
@@ -28,11 +28,14 @@ export function Services() {
               transition={{ duration: 0.5, delay: (i % 3) * 0.08, ease: 'easeOut' }}
               className="group relative rounded-2xl overflow-hidden bg-[color:var(--color-surface)] border border-[color:var(--color-line)] hover:border-[color:var(--color-ink)] transition-all duration-300 hover:-translate-y-1"
             >
-              <Illustration
-                variant={s.illustration as 'beam' | 'pulse' | 'nodes' | 'circuit' | 'grid'}
-                tone={i === 2 ? 'dark' : i === 4 ? 'accent' : 'light'}
+              <Picture
+                src={s.imageSrc}
+                alt={s.alt}
+                fallbackVariant={s.illustration as 'beam' | 'pulse' | 'nodes' | 'circuit' | 'grid'}
+                fallbackTone={i === 2 ? 'dark' : i === 4 ? 'accent' : 'light'}
                 seed={i}
                 className="aspect-[16/10]"
+                label="Foto folgt"
               />
               <div className="absolute top-4 left-4 flex h-11 w-11 items-center justify-center rounded-xl bg-[color:var(--color-ink)] text-[color:var(--color-accent)] shadow-lg">
                 <Icon className="h-5 w-5" strokeWidth={2} />

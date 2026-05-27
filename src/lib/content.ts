@@ -1,3 +1,15 @@
+// Hero background image (subtle, sits behind the text). 1920x1080 min.
+export const heroImage = {
+  src: '/images/hero/hero.jpg',
+  alt: 'Elektroplanung im Großprojekt',
+}
+
+// Team / company portrait used in About section. 1200x1500 (4:5 portrait).
+export const aboutImage = {
+  src: '/images/about/team.jpg',
+  alt: 'Team HELLPLAN am Standort Potsdam',
+}
+
 export const company = {
   name: 'HELLPLAN',
   fullName: 'HELLPLAN Ingenieurgesellschaft für Elektro- und Gebäudetechnik mbH',
@@ -50,6 +62,8 @@ export const services = [
     description:
       'Hoch-, Mittel- und Niederspannung. Netzberechnung, Verteilungen, Notstrom bis zur Übergabe an den Netzbetreiber.',
     illustration: 'beam',
+    imageSrc: '/images/services/starkstromtechnik.jpg',
+    alt: 'Hochspannungsverteilung in einer Trafostation',
   },
   {
     title: 'Beleuchtungstechnik',
@@ -57,6 +71,8 @@ export const services = [
     description:
       'Herstellerunabhängige Lichtplanung für Innen- und Außenbereiche, normgerecht und mit Blick auf Stromverbrauch und Wartung.',
     illustration: 'pulse',
+    imageSrc: '/images/services/beleuchtungstechnik.jpg',
+    alt: 'Beleuchtungskonzept in einem öffentlichen Gebäude',
   },
   {
     title: 'Brandmelde- und Sicherheit',
@@ -64,6 +80,8 @@ export const services = [
     description:
       'BMA, EMA, Videosicherheit, Zutrittskontrolle. Geplant nach DIN 14675 und den Anforderungen der Bauordnung Brandenburg.',
     illustration: 'pulse',
+    imageSrc: '/images/services/brandmelde-sicherheit.jpg',
+    alt: 'Brandmeldezentrale mit Anzeigetableau',
   },
   {
     title: 'Daten- und Kommunikationstechnik',
@@ -71,6 +89,8 @@ export const services = [
     description:
       'Strukturierte Verkabelung, Netzwerk, IT-Schränke. Vom Patchpanel bis zum Rechenzentrum.',
     illustration: 'nodes',
+    imageSrc: '/images/services/daten-kommunikation.jpg',
+    alt: 'Strukturierte Verkabelung in einem Serverraum',
   },
   {
     title: 'Gebäudeautomation',
@@ -78,6 +98,8 @@ export const services = [
     description:
       'MSR- und Bustechnik für Heizung, Lüftung, Beschattung. Schnittstellenoffen, herstellerneutral.',
     illustration: 'circuit',
+    imageSrc: '/images/services/gebaeudeautomation.jpg',
+    alt: 'Schaltschrank für Gebäudeautomation',
   },
   {
     title: 'Beratung und Gutachten',
@@ -85,6 +107,8 @@ export const services = [
     description:
       'Bestandsaufnahmen und Sanierungskonzepte. Auch als zweite Meinung zu laufenden Planungen anderer Büros.',
     illustration: 'grid',
+    imageSrc: '/images/services/beratung-gutachten.jpg',
+    alt: 'Begehung mit Planungsunterlagen vor Ort',
   },
 ] as const
 
@@ -117,6 +141,8 @@ export const references: ReadonlyArray<{
   location: string
   scope: string
   year: string
+  imageSrc: string
+  alt: string
 }> = [
   {
     category: 'Öffentlich',
@@ -124,6 +150,8 @@ export const references: ReadonlyArray<{
     location: 'Potsdam-Mittelmark',
     scope: 'Elektroplanung LP 1–9, BMA, Sicherheitstechnik',
     year: '2023',
+    imageSrc: '/images/references/01-verwaltungsgebaeude.jpg',
+    alt: 'Verwaltungsgebäude eines Landkreises in Brandenburg',
   },
   {
     category: 'Bildung',
@@ -131,6 +159,8 @@ export const references: ReadonlyArray<{
     location: 'Brandenburg an der Havel',
     scope: 'Stark- und Schwachstrom, Notbeleuchtung, BMA',
     year: '2022',
+    imageSrc: '/images/references/02-schulneubau.jpg',
+    alt: 'Schulneubau mit angegliederter Sporthalle',
   },
   {
     category: 'Gesundheit',
@@ -138,6 +168,8 @@ export const references: ReadonlyArray<{
     location: 'Potsdam',
     scope: 'Elektro, Rufanlage, Sicherheitsbeleuchtung',
     year: '2024',
+    imageSrc: '/images/references/03-pflegezentrum.jpg',
+    alt: 'Pflegezentrum mit 120 Betten in Potsdam',
   },
   {
     category: 'Industrie',
@@ -145,6 +177,8 @@ export const references: ReadonlyArray<{
     location: 'Werder (Havel)',
     scope: 'NS-Verteilung, EX-Schutz, Prozessbeleuchtung',
     year: '2023',
+    imageSrc: '/images/references/04-produktionserweiterung.jpg',
+    alt: 'Erweiterung einer Produktionshalle in Werder',
   },
   {
     category: 'Wohnen',
@@ -152,6 +186,8 @@ export const references: ReadonlyArray<{
     location: 'Berlin-Brandenburg',
     scope: 'Wohnungselektro, Allgemeinflächen, Tiefgarage',
     year: '2024',
+    imageSrc: '/images/references/05-quartiersentwicklung.jpg',
+    alt: 'Quartiersentwicklung im Berliner Umland',
   },
   {
     category: 'Öffentlich',
@@ -159,6 +195,8 @@ export const references: ReadonlyArray<{
     location: 'Brandenburg',
     scope: 'Komplettsanierung Elektro im Bestand',
     year: '2021',
+    imageSrc: '/images/references/06-feuerwache.jpg',
+    alt: 'Sanierte Feuerwache in Brandenburg',
   },
   {
     category: 'Bildung',
@@ -166,6 +204,8 @@ export const references: ReadonlyArray<{
     location: 'Potsdam',
     scope: 'Elektroplanung Neubau, Außenbeleuchtung',
     year: '2022',
+    imageSrc: '/images/references/07-kita.jpg',
+    alt: 'Kita-Neubau in Potsdam mit Außenanlage',
   },
   {
     category: 'Gesundheit',
@@ -173,6 +213,8 @@ export const references: ReadonlyArray<{
     location: 'Brandenburg',
     scope: 'Mieterausbau, Medizingerätekonzept',
     year: '2023',
+    imageSrc: '/images/references/08-aerztehaus.jpg',
+    alt: 'Ärztehaus mit angeschlossener Apotheke',
   },
 ]
 

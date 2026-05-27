@@ -1,9 +1,9 @@
 'use client'
 
 import { motion } from 'framer-motion'
-import { company } from '@/lib/content'
+import { company, aboutImage } from '@/lib/content'
 import { SectionShell } from './SectionShell'
-import { Illustration } from './Illustration'
+import { Picture } from './Picture'
 
 export function About() {
   return (
@@ -61,9 +61,11 @@ export function About() {
           transition={{ duration: 0.7 }}
           className="relative"
         >
-          <Illustration
-            variant="circuit"
-            tone="dark"
+          <Picture
+            src={aboutImage.src}
+            alt={aboutImage.alt}
+            fallbackVariant="circuit"
+            fallbackTone="dark"
             seed={2}
             className="aspect-[4/5] rounded-2xl"
             label="Teamfoto folgt"
