@@ -8,22 +8,16 @@ import { stats } from '@/lib/content'
 export function Hero() {
   return (
     <section id="top" className="relative overflow-hidden pt-32 md:pt-40 pb-24 md:pb-32">
+      {/* Schematic background from original site, very dezent */}
+      <div
+        className="pointer-events-none absolute inset-0 opacity-[0.18] bg-no-repeat bg-cover bg-center mix-blend-multiply"
+        style={{ backgroundImage: "url('/images/hero/hero-pattern.jpg')" }}
+        aria-hidden
+      />
+
       {/* Layered background graphics */}
       <SineBackdrop className="pointer-events-none absolute inset-x-0 top-1/3 h-[55%] w-full opacity-90" />
       <div className="pointer-events-none absolute -top-32 -right-32 h-96 w-96 rounded-full bg-[color:var(--color-accent-soft)] opacity-40 blur-3xl" />
-
-      {/* Diagonal stroke grid */}
-      <svg
-        className="pointer-events-none absolute inset-0 h-full w-full opacity-[0.06]"
-        aria-hidden
-      >
-        <defs>
-          <pattern id="hero-grid" width="60" height="60" patternUnits="userSpaceOnUse">
-            <path d="M 60 0 L 0 0 0 60" fill="none" stroke="#1a1a1a" strokeWidth="1" />
-          </pattern>
-        </defs>
-        <rect width="100%" height="100%" fill="url(#hero-grid)" />
-      </svg>
 
       {/* Vertical accent strokes */}
       <div className="pointer-events-none absolute inset-y-0 left-[8%] w-px bg-gradient-to-b from-transparent via-[color:var(--color-line)] to-transparent" />
